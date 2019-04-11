@@ -1,6 +1,10 @@
 package com.example.tip_taxes.meteo;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +14,6 @@ import android.widget.TextView;
 
 import com.example.tip_taxes.R;
 import com.example.tip_taxes.meteo.model.Weather;
-import com.example.tip_taxes.meteo.model.WeatherHttpClient;
 
 public class Meteo extends AppCompatActivity {
     TextView ville,textTemp,temperature,vent,pression;
@@ -19,6 +22,10 @@ public class Meteo extends AppCompatActivity {
 
     private float CELSIUS_CONVERT = -273.15f;
     private float KMH_CONVERT = 3.6f;
+
+    private double latitude;
+    private double longitude;
+    String city = "Chicoutimi,ca";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +38,38 @@ public class Meteo extends AppCompatActivity {
         pression = findViewById(R.id.pression);
         image = findViewById(R.id.image);
 
-        String city = "Chicoutimi,ca";
 
-        JSONWeatherTask task = new JSONWeatherTask();
-        task.execute(new String[]{city});
+        LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        LocationListener locationListener = new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                latitude = location.getLatitude();
+                longitude = location.getLongitude();
+
+                JSONWeatherTask task = new JSONWeatherTask();
+                task.execute(latitude, longitude);
+            }
+
+            @Override
+            public void onStatusChanged(String s, int i, Bundle bundle) {
+            }
+
+            @Override
+            public void onProviderEnabled(String s) {
+            }
+
+            @Override
+            public void onProviderDisabled(String s) {
+            }
+        };
+
+        try {
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,60000, 0, locationListener);
+        }
+        catch (SecurityException e){
+            e.printStackTrace();
+        }
+
     }
 
     private void chooseImageSource() {
@@ -65,17 +100,17 @@ public class Meteo extends AppCompatActivity {
         }
     }
 
-    private class JSONWeatherTask extends AsyncTask<String, Void, Weather> {
+    private class JSONWeatherTask extends AsyncTask<Double, Void, Weather> {
 
         @Override
-        protected Weather doInBackground(String[] params) {
+        protected Weather doInBackground(Double[] coord) {
+
+
             Weather weather = new Weather();
-            String data = new WeatherHttpClient().getWeatherData(params[0]);
+            String data = new WeatherHttpClient().getWeatherData(coord[0], coord[1]);
 
             try {
                 weather = ParserJSON.parse(data);
-
-
             } catch (Exception e) {
                 e.printStackTrace();
             }

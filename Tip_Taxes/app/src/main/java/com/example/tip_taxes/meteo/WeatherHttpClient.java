@@ -1,4 +1,4 @@
-package com.example.tip_taxes.meteo.model;
+package com.example.tip_taxes.meteo;
 
 import android.util.Log;
 
@@ -10,16 +10,18 @@ import java.net.URL;
 
 public class WeatherHttpClient {
 
-    private static String BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
     private static String APPID = "00f433a93656dbd119f60b5ad60277b5";
 
-    public String getWeatherData(String location) {
+    public String getWeatherData(Double latitude, Double longitude) {
+
+        String BASE_URL = "api.openweathermap.org/data/2.5/weather?lat="+Double.toString(latitude)+"&lon="+Double.toString(longitude);
+
         HttpURLConnection con = null ;
         InputStream is = null;
 
         try {
 
-            URL url = new URL(BASE_URL + location + "&APPID=" + APPID);
+            URL url = new URL(BASE_URL + "&APPID=" + APPID);
             Log.i("DEBUG",url.toString());
             con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
