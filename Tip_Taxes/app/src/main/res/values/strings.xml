@@ -14,4 +14,10 @@
     <string name="total">Total :</string>
     <string name="otherperc">Votre %</string>
     <string name="chicoutimi">Chicoutimi</string>
+    <string name="soleil">Soleil</string>
+    <string name="soleilnuageux">Quelques nuages</string>
+    <string name="nuage">Nuages</string>
+    <string name="pluvieux">Pluie</string>
+    <string name="tonnerre">Tonnerre</string>
+    <string name="neige">Neige</string>
 </resources>
