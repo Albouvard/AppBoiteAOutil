@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tip_Taxes</string>
+    <string name="title"><u>Tips et Taxes</u></string>
+    <string name="prix_initial">Prix initial :</string>
+    <string name="price">price</string>
+    <string name="tax">TAX</string>
+    <string name="taxfinal">Tax :</string>
+    <string name="tipsTitle">Tips</string>
+    <string name="_15">15%</string>
+    <string name="_20">20%</string>
+    <string name="_25">25%</string>
+    <string name="OtherTaxPerc">Other</string>
+    <string name="tips">Tips :</string>
+    <string name="total">Total :</string>
+    <string name="otherperc">Votre %</string>
+    <string name="chicoutimi">Chicoutimi</string>
+</resources>
