@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tip_taxes.meteo.Meteo;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void openMeteo(View view) {
-        Intent i = new Intent(this,Meteo.class);
+        Intent i = new Intent(this, Meteo.class);
         startActivity(i);
     }
 }
