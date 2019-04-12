@@ -64,7 +64,7 @@ public class Meteo extends AppCompatActivity {
         };
 
         try {
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,60000, 0, locationListener);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,30000, 0, locationListener);
         }
         catch (SecurityException e){
             e.printStackTrace();

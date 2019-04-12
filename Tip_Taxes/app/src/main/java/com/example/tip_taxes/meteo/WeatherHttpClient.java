@@ -11,25 +11,20 @@ import java.net.URL;
 public class WeatherHttpClient {
 
     private static String APPID = "00f433a93656dbd119f60b5ad60277b5";
+    private static String BASE_URL = "api.openweathermap.org/data/2.5/weather?lat=";
 
     public String getWeatherData(Double latitude, Double longitude) {
-
-        String BASE_URL = "api.openweathermap.org/data/2.5/weather?lat="+Double.toString(latitude)+"&lon="+Double.toString(longitude);
 
         HttpURLConnection con = null ;
         InputStream is = null;
 
         try {
 
-            URL url = new URL(BASE_URL + "&APPID=" + APPID);
-            Log.i("DEBUG",url.toString());
+            URL url = new URL("http://"+ BASE_URL + Double.toString(latitude) +"&lon=" + Double.toString(longitude) + "&APPID=" + APPID);
             con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setDoInput(true);
             con.setDoOutput(true);
-
-
-            Log.i("DEBUG",con.toString());
             con.connect();
 
 
