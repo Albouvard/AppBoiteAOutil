@@ -29,4 +29,7 @@
     <string name="c">°C</string>
     <string name="km_h">Km/h</string>
     <string name="hpa">hPa</string>
+    <string name="titleCur">Currency Converter</string>
+    <string name="DeviseToConvert">Devise a convertir</string>
+    <string name="deviseText">Devise</string>
 </resources>

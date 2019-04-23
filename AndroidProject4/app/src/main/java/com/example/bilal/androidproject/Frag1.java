@@ -106,11 +106,12 @@ public class Frag1 extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                intInitPrice = Double.parseDouble(s.toString());
-                checkTax();
-                checkTips();
-                refresh();
-
+                if(!s.toString().isEmpty()){
+                    intInitPrice = Double.parseDouble(s.toString());
+                    checkTax();
+                    checkTips();
+                    refresh();
+                }
             }
 
             @Override
@@ -125,9 +126,12 @@ public class Frag1 extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                persPercentage = Double.parseDouble(s.toString());
-                persPercentage = persPercentage / 100;
-                checkTips();
+                if (!s.toString().isEmpty()){
+                    persPercentage = Double.parseDouble(s.toString());
+                    persPercentage = persPercentage / 100;
+                    checkTips();
+                }
+
             }
 
             @Override
