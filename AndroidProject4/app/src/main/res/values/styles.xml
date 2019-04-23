@@ -14,8 +14,9 @@
         <!-- ... -->
     </style>
 
-    <style name="AppTheme.Meteo">
+    <style name="AppTheme.Description">
         <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/grey</item>
     </style>
 
     <style name="AppTheme.Title">
