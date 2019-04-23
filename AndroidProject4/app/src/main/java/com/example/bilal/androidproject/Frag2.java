@@ -50,7 +50,6 @@ public class Frag2 extends Fragment {
 
 
         LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
-        Log.i("DEBUG","le mobile c super");
         LocationListener locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
@@ -134,7 +133,6 @@ public class Frag2 extends Fragment {
             return weather;
         }
 
-        @SuppressLint("SetTextI18n")
         @Override
         protected void onPostExecute(Weather weather) {
             super.onPostExecute(weather);

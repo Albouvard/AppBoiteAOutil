@@ -15,9 +15,7 @@
     </style>
 
     <style name="AppTheme.Meteo">
-        <item name="colorPrimary">@color/sunFlower</item>
-        <item name="colorPrimaryDark">@color/orange</item>
-        <item name="colorAccent">@color/peter_river</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="AppTheme.Title">
@@ -37,8 +35,5 @@
         <item name="android:textColor">@color/sunFlower</item>
     </style>
 
-    <style name="AppTheme.Temperature">
-        <item name="android:textSize">40sp</item>
-    </style>
 
 </resources>

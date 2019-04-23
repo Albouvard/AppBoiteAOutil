@@ -26,13 +26,13 @@
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/meteoView"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:layout_marginTop="-85dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ville"
-            android:layout_marginBottom="20dp"
             android:textSize="50sp"
             android:textStyle="bold"
             style="@style/AppTheme.Title"/>
