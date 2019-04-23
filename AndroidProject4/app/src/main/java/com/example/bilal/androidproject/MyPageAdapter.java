@@ -6,8 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class MyPageAdapter extends FragmentPagerAdapter {
-    public MyPageAdapter(FragmentManager fm) {
+    private int pos;
 
+    public MyPageAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -20,15 +21,19 @@ public class MyPageAdapter extends FragmentPagerAdapter {
                 return new Frag1();
             case 1:
                 return new Frag2();
+            case 2:
+                return new Frag3();
 
 //                return PlaceholderFragment.newInstance(R.layout.fragment_app1);
         }
         return null;
     }
 
+
+
     @Override
     public int getCount() {
         // Show 3 total pages.
-        return 2;
+        return 3;
     }
 }
