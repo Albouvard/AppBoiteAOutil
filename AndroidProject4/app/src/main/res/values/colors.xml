@@ -9,4 +9,9 @@
     <color name="colroWisteria">#8e44ad</color>
     <color name="colorOnPrimary">#ffffff</color>
 
+
+    <color name="sunFlower">#F1C40F</color>
+    <color name="orange">#F39C12</color>
+    <color name="peter_river">#3498D8</color>
+    <color name="white">#FFFFFF</color>
 </resources>

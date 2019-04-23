@@ -14,4 +14,31 @@
         <!-- ... -->
     </style>
 
+    <style name="AppTheme.Meteo">
+        <item name="colorPrimary">@color/sunFlower</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/peter_river</item>
+    </style>
+
+    <style name="AppTheme.Title">
+        <item name="android:textColor">@color/peter_river</item>
+    </style>
+
+    <style name="AppTheme.Details">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="AppTheme.Values">
+        <item name="android:textColor">@color/peter_river</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="AppTheme.Units">
+        <item name="android:textColor">@color/sunFlower</item>
+    </style>
+
+    <style name="AppTheme.Temperature">
+        <item name="android:textSize">40sp</item>
+    </style>
+
 </resources>
