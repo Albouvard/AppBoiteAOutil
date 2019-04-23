@@ -6,8 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class MyPageAdapter extends FragmentPagerAdapter {
-    public MyPageAdapter(FragmentManager fm) {
+    private int pos;
 
+    public MyPageAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -27,6 +28,8 @@ public class MyPageAdapter extends FragmentPagerAdapter {
         }
         return null;
     }
+
+
 
     @Override
     public int getCount() {
