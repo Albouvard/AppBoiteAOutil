@@ -3,7 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title"><u>Tips et Taxes</u></string>
+    <string name="title">Tips et Taxes</string>
     <string name="prix_initial">Prix initial :</string>
     <string name="price">Prix</string>
     <string name="tax">TAXES</string>
