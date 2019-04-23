@@ -12,19 +12,19 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"
-        android:layout_marginTop="-30dp"
+        android:layout_marginTop="10dp"
         android:textColor="@color/peter_river"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/prix_initial"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="5dp"/>
+
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/price"
         android:id="@+id/initPrice"
-        android:text=""
         android:textSize="20sp"
         android:inputType="number"
         android:layout_marginBottom="30dp"/>
@@ -32,13 +32,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
+
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="2"
-            android:scaleY="2"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="60dp"
             android:id="@+id/taxSwitch"
             android:checked="true"
             android:layout_marginBottom="30dp"
@@ -48,10 +49,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tax"
+            android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="10dp"
             android:textSize="20sp"/>
     </RelativeLayout>
     <TextView
@@ -68,10 +70,10 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="2"
-            android:scaleY="2"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="60dp"
             android:id="@+id/tipSwitch"
             android:checked="true"
             android:layout_marginBottom="30dp"
@@ -81,10 +83,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tipsTitle"
+            android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="10dp"
             android:textSize="20sp"/>
 
     </RelativeLayout>
@@ -94,27 +97,36 @@
         android:orientation="horizontal"
         android:id="@+id/radioGroup"
         android:layout_marginBottom="30dp">
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_15"
             android:id="@+id/Tip1"
             android:checked="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
             />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Tip2"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="@string/_20"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Tip3"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="@string/_25"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Tip4"
+            android:textStyle="bold"
+            android:textSize="20sp"
             android:text="@string/OtherTaxPerc"/>
     </RadioGroup>
     <com.google.android.material.textfield.TextInputEditText
@@ -137,12 +149,13 @@
         android:textStyle="bold"
         android:textSize="35sp"
         android:layout_marginTop="25dp"/>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:text=""
         android:id="@+id/totalValue"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="5dp"/>
 </LinearLayout>
