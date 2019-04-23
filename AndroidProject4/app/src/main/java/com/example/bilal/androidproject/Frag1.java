@@ -157,8 +157,8 @@ public class Frag1 extends Fragment {
     private void refresh() {
         intTotalPrice = intInitPrice + intTaxPrice + intTipsPrice;
         totalPrice.setText(String.format("%.2f$", intTotalPrice));
-        taxPrice.setText(String.format("Tax : %.2f$", intTaxPrice));
-        tipsPrice.setText(String.format("Tips : %.2f$", intTipsPrice));
+        taxPrice.setText(String.format("%.2f$", intTaxPrice));
+        tipsPrice.setText(String.format("%.2f$", intTipsPrice));
 
     }
 
