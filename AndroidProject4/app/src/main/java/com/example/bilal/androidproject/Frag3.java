@@ -65,7 +65,7 @@ public class Frag3 extends Fragment {
         convertButton = (Button) view.findViewById(R.id.convertButton);
         spinner1 = (Spinner) view.findViewById(R.id.spinner1);
         spinner2 = (Spinner) view.findViewById(R.id.spinner2);
-        
+
         countryList = new ArrayList<Country>();
         initCountryList();
 

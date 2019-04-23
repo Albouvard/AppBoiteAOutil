@@ -19,6 +19,10 @@
         android:layout_height="wrap_content"
         android:text="@string/prix_initial"
         android:layout_marginBottom="30dp"/>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5c7cb9d1a9c94c80c84850a4e094f30b8c0ef156
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
