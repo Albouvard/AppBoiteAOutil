@@ -98,6 +98,7 @@ public class Frag1 extends Fragment {
         otherTip = (TextInputEditText) view.findViewById(R.id.otherTip);
         persPercentage = 0;
         tipPercentage = 0.15;
+
         initPrice.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

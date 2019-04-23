@@ -30,6 +30,10 @@
     <string name="km_h">Km/h</string>
     <string name="hpa">hPa</string>
     <string name="titleCur">Currency Converter</string>
-    <string name="DeviseToConvert">Devise a convertir</string>
-    <string name="deviseText">Devise</string>
+    <string name="startName">de :</string>
+    <string name="toName">a : </string>
+    <string name="prixStart">Prix départ</string>
+    <string name="deviseSearch">Recherche</string>
+    <string name="refresh">Convertir</string>
+    <string name="resultTitle">=</string>
 </resources>
