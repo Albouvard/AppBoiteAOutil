@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="deviseSearch">Recherche</string>
+    <string name="neige">Neige</string>
+    <string name="nuage">Nuages</string>
+    <string name="otherperc" translatable="false">Votre %</string>
+    <string name="OtherTaxPerc">Autres</string>
+    <string name="pluvieux">Pluvieux</string>
+    <string name="pression">Pression</string>
+    <string name="price">Prix</string>
+    <string name="prix_initial">Prix intial :</string>
+    <string name="prixStart">Prix départ</string>
+    <string name="refresh">Convertir</string>
+    <string name="soleil">Ensoleillé</string>
+    <string name="soleilnuageux">Quelques nuages</string>
+    <string name="startName">de ;</string>
+    <string name="taxfinal">Taxe</string>
+    <string name="temperature">Temperature ;</string>
+    <string name="title">Tips et Taxes</string>
+    <string name="titleCur">Convertisseur de devises</string>
+    <string name="toName">a :</string>
+    <string name="tonnerre">Tonnerre</string>
+    <string name="vent">Vent :</string>
+</resources>

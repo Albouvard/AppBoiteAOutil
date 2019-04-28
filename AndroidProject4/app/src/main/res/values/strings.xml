@@ -1,39 +1,39 @@
 <resources>
-    <string name="app_name">Tiguidou</string>
+    <string name="app_name" translatable="false">Tiguidou</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title">Tips et Taxes</string>
-    <string name="prix_initial">Prix initial :</string>
-    <string name="price">Prix</string>
-    <string name="tax">TAXES</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title">Tips and Taxes</string>
+    <string name="prix_initial">Initial Price :</string>
+    <string name="price">Price</string>
+    <string name="tax" translatable="false">TAXES</string>
     <string name="taxfinal">Tax :</string>
-    <string name="tipsTitle">TIPS</string>
-    <string name="_15">15%</string>
-    <string name="_20">20%</string>
-    <string name="_25">25%</string>
+    <string name="tipsTitle" translatable="false">TIPS</string>
+    <string name="_15" translatable="false">15%</string>
+    <string name="_20" translatable="false">20%</string>
+    <string name="_25" translatable="false">25%</string>
     <string name="OtherTaxPerc">Other</string>
-    <string name="tips">Tips :</string>
-    <string name="total">Total :</string>
-    <string name="otherperc">Votre %</string>
-    <string name="chicoutimi">Chicoutimi</string>
-    <string name="soleil">Soleil</string>
-    <string name="soleilnuageux">Quelques nuages</string>
-    <string name="nuage">Nuages</string>
-    <string name="pluvieux">Pluie</string>
-    <string name="tonnerre">Tonnerre</string>
-    <string name="neige">Neige</string>
+    <string name="tips" translatable="false">Tips :</string>
+    <string name="total" translatable="false">Total :</string>
+    <string name="otherperc">Your %</string>
+    <string name="chicoutimi" translatable="false">Chicoutimi</string>
+    <string name="soleil">Sunny</string>
+    <string name="soleilnuageux">Few Clouds</string>
+    <string name="nuage">Clouds</string>
+    <string name="pluvieux">Rainy</string>
+    <string name="tonnerre">Storm</string>
+    <string name="neige">Snow</string>
     <string name="temperature">Temperature :</string>
-    <string name="vent">Vent :</string>
-    <string name="pression">Pression :</string>
-    <string name="c">°C</string>
-    <string name="km_h">Km/h</string>
-    <string name="hpa">hPa</string>
+    <string name="vent">Wind :</string>
+    <string name="pression">Pressure :</string>
+    <string name="c" translatable="false">°C</string>
+    <string name="km_h" translatable="false">Km/h</string>
+    <string name="hpa" translatable="false">hPa</string>
     <string name="titleCur">Currency Converter</string>
-    <string name="startName">de :</string>
-    <string name="toName">a : </string>
-    <string name="prixStart">Prix départ</string>
-    <string name="deviseSearch">Recherche</string>
-    <string name="refresh">Convertir</string>
-    <string name="resultTitle">=</string>
+    <string name="startName">from :</string>
+    <string name="toName">to : </string>
+    <string name="prixStart">Start Price</string>
+    <string name="deviseSearch">Research</string>
+    <string name="refresh">Convert</string>
+    <string name="resultTitle" translatable="false">=</string>
 </resources>
