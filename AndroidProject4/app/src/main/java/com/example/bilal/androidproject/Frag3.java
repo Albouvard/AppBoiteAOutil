@@ -166,8 +166,6 @@ public class Frag3 extends Fragment {
 
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(getActivity(), "on cherche la data",
-                    Toast.LENGTH_LONG).show();
 
         }
 
@@ -197,9 +195,6 @@ public class Frag3 extends Fragment {
                 prixDeb = Float.parseFloat(String.valueOf(priceStart.getText()));
                 prixFinal = prixDeb * resultat;
                 priceResult.setText(String.format("%.2f "+arr, prixFinal));
-            } else {
-                Toast.makeText(getActivity(), "IMPOSSIBLE NULL",
-                        Toast.LENGTH_LONG).show();
             }
 
         }
